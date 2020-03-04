@@ -1,4 +1,26 @@
 .column{
     text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
 
+}
+.form1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#submit{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 1px solid;
+    padding: 10px 30px;
+    outline: none;
+    border-radius: 20px;
+    color: #111;
+    transition: 0.25s;
+    cursor: pointer;
 }
