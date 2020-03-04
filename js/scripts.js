@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
     $("#reviewForm").submit(function(e){
+        
         e.preventDefault();
-
         $.ajax({
 
             url:"connect.php",
