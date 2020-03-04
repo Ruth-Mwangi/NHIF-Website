@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles.css">
+    <title>NHIF</title>
 </head>
 <body>
-    <div class="Login">
-        <h1>Sign in</h1>
-    
-    <form action="/action_page.php">
-      <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname"><br><br>
-      <label for="lname">Last name:</label>
-      <input type="text" id="lname" name="lname"><br><br>
-      <label for="Email">Email address:</label>
-      <input type="text" id="email" name="email"><br><br>
-      <input type="submit" value="Submit">
-    </form>
-    
+    <div class="jumbotron">
+        <div class="column">
+            <h1>NHIF</h1>
+            <select name="" id="category">
+
+            </select>
+            <select name="" id="county">
+
+            </select>
+            <select name="" id="branch">
+
+            </select>
         </div>
+    </div>
+    <section>
+        <div class="form1">
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                    First Name <br> <input type="text" id ="fname" placeholder="First name.." class="form-control" >
+                    </div>
+                    <div class="col">
+                    Last Name <br>  <input type="text" id ="lname" placeholder="Last name.."  class="form-control"><br>
+                    </div>
+                  </div>
+                  Email: <input type="text" id="email" class="form-control">
+                  Hospital: <input type="text" id="hospital" class="form-control">
+                  <input type="radio" name="citizen" id="civil"> Civil servants only
+                  <input type="radio" name="citizen" id="civilian"> Civilian <br><br>
+                  <textarea name="review" id="review" cols="30" rows="10" placeholder="Please give us feedback"></textarea><br><br>
+                  <button type="button" id="submit">Submit</button>
+
+            </form>
+        </div>
+    </section>
 </body>
 </html>
