@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +8,63 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
     <title>NHIF</title>
 </head>
-<body>
-    <div class="header">
 
+<body>
+    <div class="topBg">
+        <div class="ptext">
+            <h1>Patient Advocate</h1>
+            <p> </p>
+        </div>
     </div>
+
     <div class="jumbotron">
         <div class="column">
-            <h1>NHIF</h1>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     Category: <br>
                     <select name="category" id="category" class="form-control">
 
                     </select>
-                 </div>
-                <div class="col-md-4">
+                </div>
+                <div class="col-md-6">
                     County:
                     <select name="county" id="county" class="form-control">
                         
                     </select>
                 </div>
-                <div class="col-md-4">
-                    Branch:
-                    <select name="branch" id="branch" class="form-control">
 
-                    </select>
-                </div>
             </div>
         </div>
     </div>
     <div class="container">
-        
+
     </div>
     <section>
         <div class="form1">
-            <form action=""  id="reviewForm">
+            <form action="" id="reviewForm">
                 <div class="row">
                     <div class="col">
-                    First Name <br> <input type="text" name="firstname" id ="fname" placeholder="First name.." class="form-control" >
+                        First Name <br> <input type="text" name="firstname" id="fname" placeholder="First name.." class="form-control">
                     </div>
                     <div class="col">
-                    Last Name <br>  <input type="text" name="lastname"id ="lname" placeholder="Last name.."  class="form-control"><br>
+                        Last Name <br> <input type="text" name="lastname" id="lname" placeholder="Last name.." class="form-control"><br>
                     </div>
-                  </div>
-                  Email: <input type="text" name="email" id="email" class="form-control">
-                  Hospital: <input type="text" id="hospital" name="hospital" class="form-control">
-                  Category: <input type="text" name="category" id="category" class="form-control"><br>
-                  <input type="radio" name="citizen" id="civil" value="Civil servants"> Civil servants only
-                  <input type="radio" name="citizen" id="civilian" value="all"> Civilian <br><br>
-                  <textarea name="review" id="review" cols="80" rows="8" placeholder="Please give us feedback"></textarea><br><br>
-                  <button type="submit" id="submit">Submit</button>
+                </div>
+                Email: <input type="text" name="email" id="email" class="form-control"> Hospital: <input type="text" id="hospital" name="hospital" class="form-control"> Category: <input type="text" name="category" id="category" class="form-control"><br>
+                <input type="radio" name="citizen" id="civil" value="Civil servants"> Civil servants only
+                <input type="radio" name="citizen" id="civilian" value="all"> Civilian <br><br>
+                <textarea name="review" id="review" cols="80" rows="8" placeholder="Please give us feedback"></textarea><br><br>
+                <button type="submit" id="submit">Submit</button>
 
             </form>
         </div>
     </section>
 
-<script src="js/scripts.js"></script>
+
+
 </body>
+
 </html>
