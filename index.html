@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="js/jquery.js"></script>
     <script src="js/scripts.js"></script>
     <title>NHIF</title>
@@ -15,8 +15,20 @@
 <body>
     <div class="topBg">
         <div class="ptext">
-            <h1>Patient Advocate</h1>
-            <p> </p>
+            <h1>Patient Advocate</h1><br>
+            <div class="row">
+                <div class="col">
+                    <h5>Inpatient facilities</h5>
+                    <h6>Inpatient care refers to medical treatment that is provided in a hospital or other facility and requires at least one overnight stay.</h6>
+                    
+                </div>
+                <div class="col">
+                    <h5>Outpatient facilities</h5>
+                    <h6>Outpatien care refers to medical treatment that does not require an overnight stay in a hospital or medical facility.</h6>
+                    
+                </div>
+            </div>
+            
         </div>
     </div>
 
@@ -47,6 +59,9 @@
     <section>
         <div class="form1">
             <form action="" id="reviewForm">
+                <div class="row" id="feedback">
+                    <h3>Feedback</h3>
+                </div>
                 <div class="row">
                     <div class="col">
                         First Name <br> <input type="text" name="firstname" id="fname" placeholder="First name.." class="form-control">

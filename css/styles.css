@@ -4,6 +4,9 @@
          margin: 0;
          font-size: 18px;
          line-height: 1.8em;
+         font-family: 'Source Sans Pro';
+         
+         
      }
      
      .topBg {
@@ -18,14 +21,14 @@
      
      .ptext {
          position: absolute;
-         top: 45%;
+         top: 35%;
          width: 100%;
          text-align: center;
          letter-spacing: 8px;
-         background-color: #111;
+         background-color: rgba(17, 17, 17,0.67);
          color: #fff;
          padding: 20px;
-         opacity: 0.67;
+         
      }
      
      .column {
@@ -55,3 +58,26 @@
          transition: 0.25s;
          cursor: pointer;
      }
+     #feedback {
+         padding-left: 300px;
+     }
+
+     input[type="text"],textarea{
+        border-radius: 15px 50px;
+     }
+
+     .container{
+         background-color: rgba(0,0, 144,0.1);
+         height: fit-content;
+     }
+     .container .row{
+         border: rgb(12,71,157) double 2px;
+     }
+     #reviewForm{
+         background-color: rgba(12,71,157,0.4);
+         margin-top: 30px;
+     }
+     section{
+        background-color: #E3E2DF;
+     }
+     

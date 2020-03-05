@@ -44,7 +44,7 @@ $(document).ready(function(){
             method:'post',
             data:$("#reviewForm").serialize(),
            success:function(data){
-               alert(data);
+               //alert(data);
            },error: function() {
             alert('There was some error performing the AJAX call!');
           }
