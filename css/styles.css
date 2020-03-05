@@ -4,6 +4,10 @@
     margin-right: 150px;
 
 }
+.header{
+    background-image: url("../image/background3.jpg");
+
+}
 .form1{
     display: flex;
     justify-content: center;
