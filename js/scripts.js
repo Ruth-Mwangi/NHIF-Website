@@ -13,17 +13,17 @@ $(document).ready(function(){
         
     })
 //
-    // $("select#category").hover(function(){
-    //     //Do Nothing On Mouse In
-    // },function(){
-    //     y = $(this).find("option:selected").val();
-    //     //alert(x);
-    //     $.post("category.php",{fetchcategory:y},function(data){
-    //         //alert(data);
-    //         $(".container").html(data);
-    //     });
+    $("select#category").hover(function(){
+        //Do Nothing On Mouse In
+    },function(){
+        y = $(this).find("option:selected").val();
+        //alert(x);
+        $.post("category.php",{fetchcategory:y},function(data){
+            //alert(data);
+            $(".container").html(data);
+        });
         
-    // })
+    })
 
     $.post("counties.php", {county:"county"},function(data){
         //alert(data);
@@ -49,6 +49,8 @@ $(document).ready(function(){
             alert('There was some error performing the AJAX call!');
           }
         });
+
+        $("#reviewForm").trigger("reset");
        
 
     });

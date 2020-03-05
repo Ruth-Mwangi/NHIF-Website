@@ -20,12 +20,12 @@ if(isset($_POST['fetchhosp'])){
    if($hosp == 'All'){
       $sql = "SELECT * FROM outpatient";
       $result = $conn->query($sql);
-      echo '<div class="row"> <div class="col-md-2"><h4>NHIF_Codes</h4></div>  <div class="col-md-4"><h4>Hospital</h4></div>  <div class="col-md-2"><h4>Branch</h4></div>  <div class="col-md-2"><h4>County</h4></div>  <div class="col-md-2"><h4>Category</h4></div> </div>';
+      echo '<div class="row"> <div class="col-md-2"><h4>NHIF_Codes</h4></div>  <div class="col-md-4"><h4>Hospital</h4></div>  <div class="col-md-2"><h4>Branch</h4></div>  <div class="col-md-2"><h4>County</h4></div>  <div class="col-md-1"><h4>Category</h4></div> <div class="col-md-1"><h4>Users</h4></div> </div>';
       if(($result->num_rows)>0){
           foreach($result as $row){
     
              $output='
-                <div class="row"> <div class="col-md-2"><p>'.$row['NHIF_Codes'].'</p></div>  <div class="col-md-4"><p>"'.$row['hospital'].'</p></div>  <div class="col-md-2"><p>'.$row['branch'].'</p></div>  <div class="col-md-2"><p>'.$row['county'].'</p></div>  <div class="col-md-2"><p>'.$row['category'].'</p></div> </div>
+                <div class="row"> <div class="col-md-2"><p>'.$row['NHIF_Codes'].'</p></div>  <div class="col-md-4"><p>'.$row['hospital'].'</p></div>  <div class="col-md-2"><p>'.$row['branch'].'</p></div>  <div class="col-md-2"><p>'.$row['county'].'</p></div>  <div class="col-md-1"><p>'.$row['category'].'</p></div> <div class="col-md-1"><p>'.$row['users'].'</p></div></div>
                 
     
              ';
@@ -41,12 +41,12 @@ if(isset($_POST['fetchhosp'])){
    else{
       $sql = "SELECT * FROM outpatient WHERE county='$hosp'";
       $result = $conn->query($sql);
-      echo '<div class="row"> <div class="col-md-2"><p>NHIF_Codes</p></div>  <div class="col-md-4"><p>Hospital</p></div>  <div class="col-md-2"><p>Branch</p></div>  <div class="col-md-2"><p>County</p></div>  <div class="col-md-2"><p>Category</p></div> </div>';
+      echo '<div class="row"> <div class="col-md-2"><h4>NHIF_Codes</h4></div>  <div class="col-md-4"><h4>Hospital</h4></div>  <div class="col-md-2"><h4>Branch</h4></div>  <div class="col-md-2"><h4>County</h4></div>  <div class="col-md-1"><h4>Category</h4></div> <div class="col-md-1"><h4>Users</h4></div> </div>';
       if(($result->num_rows)>0){
             foreach($result as $row){
 
                $output='
-                  <div class="row"> <div class="col-md-2"><p>'.$row['NHIF_Codes'].'</p></div>  <div class="col-md-4"><p>"'.$row['hospital'].'</p></div>  <div class="col-md-2"><p>'.$row['branch'].'</p></div>  <div class="col-md-2"><p>'.$row['county'].'</p></div>  <div class="col-md-2"><p>'.$row['category'].'</p></div> </div>
+                  <div class="row"> <div class="col-md-2"><p>'.$row['NHIF_Codes'].'</p></div>  <div class="col-md-4"><p>'.$row['hospital'].'</p></div>  <div class="col-md-2"><p>'.$row['branch'].'</p></div>  <div class="col-md-2"><p>'.$row['county'].'</p></div>  <div class="col-md-1"><p>'.$row['category'].'</p></div> <div class="col-md-1"><p>'.$row['users'].'</p></div> </div>
                   
 
                ';
